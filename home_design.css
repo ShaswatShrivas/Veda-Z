@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navagation section */
+#navbar{ 
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: sticky;
+    top:0px;
+    border: 2px solid red;
+    
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+    top:0px;
+    left: 0px;
+    
+}
+#logo{
+    margin: 4px 5px;
+}
+#logo img{
+    margin: 4px 15px ;
+    height: 91px;
+    width: 143px;
+}
+#navbar ul{
+    display: flex; 
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+#navbar ul li a{
+    color:white ; 
+    display: block;
+    padding: 5px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#navbar ul li a:hover{
+    color:black ;
+    background-color: white;   
+}
+/* home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    height: 358px;
+    justify-content: center;
+    align-items: center;
+    color:white ; 
+    border: 2px solid red;
+    
+}
+#home::before{
+    content: "";
+    /* background: url('ayurveda.jpeg') no-repeat center center/cover ; */
+    background:url('bg.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+    top:0px;
+    left: 0px;
+ }
+ #home h1{
+     color: rgb(30, 230, 19);
+     text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     cursor:default;
+    }
+    #home p{
+        font-size:1.5rem ;
+        color: black;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        cursor:default;
+ }
+ .pry{
+     font-size: 3rem; 
+     padding: 15px;
+    }
+    .btn{
+        margin: 15px;
+    padding: 5px 25px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: burlywood;
+    font-size: 1rem; 
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+/* services section*/
+#services-container{
+    background-color: azure;
+    height: 390px;
+    border: 2px solid red;
+    margin: 22px 0px;
+}
+#services{
+    display:flex;
+    margin: 5px 34px;
+}
+
+
+#services .box1{
+    margin: 5px 100px;
+    padding: 25px;
+    background: url('home_made.jpeg') no-repeat center center/cover;
+    border: 4px solid #a00888;
+    border-radius: 20px;
+    height: 200px;
+    width: 469px;
+    z-index: 2;
+}
+#services .box1 a,#services .box2 a{text-decoration: none;}
+
+#services .box1 a:visited,#services .box2 a:visited{text-decoration: none;
+color: blue;}
+#services .box1 a:link,#services .box2 a:link{text-decoration: none;
+color: blue;}
+#services .box1 a:active,#services .box2 a:active{text-decoration: none;
+color: blue;}
+
+#services .box2{
+    background: url('ayurveda.jpeg') no-repeat center center/cover ;
+    margin: 5px 100px;
+    padding: 25px;
+    border: 4px solid #a00888;
+    border-radius: 20px;
+    height: 200px;
+    width: 469px;
+    }
+#services .box p{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/* color: white; */
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem; 
+    padding: 15px;
+}
+#client-section{
+    /* height:285px; */
+    padding: 25px;
+}
+#client-section h1{
+    text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     cursor:default;
+     font-size: 2rem; 
+     color: #f63b3b;
+}
+#client{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Contact section */
+#contact{
+    position: relative;
+    /* height: 100px; */
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    /* background: url('contact-us-1908762__340.webp') no-repeat center center/cover; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+#contact  h1{
+    text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     cursor:default;
+     font-size: 2rem; 
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+
+
+footer{
+    padding: 5px 25px;
+    color: white;
+    background-color: #959595;
+}

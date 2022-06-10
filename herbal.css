@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navagation section */
+#navbar{ 
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: sticky;
+    top:0px;
+    border: 2px solid red;
+    
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+    top:0px;
+    left: 0px;
+    
+}
+#logo{
+    margin: 4px 5px;
+}
+#logo img{
+    margin: 4px 15px ;
+    height: 91px;
+    width: 143px;
+}
+#navbar ul{
+    display: flex; 
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+#navbar ul li a{
+    color:white ; 
+    display: block;
+    padding: 5px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#navbar ul li a:hover{
+    color:black ;
+    background-color: white;   
+}
+/* home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    height: 381px;
+    justify-content: center;
+    align-items: center;
+    color:white ; 
+    border: 2px solid red;
+    
+}
+#home::before{
+    content: "";
+    /* background: url('ayurveda.jpeg') no-repeat center center/cover ; */
+    background:url('bg.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+    top:0px;
+    left: 0px;
+ }
+ #home h1{
+     color: rgb(30, 230, 19);
+     text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     cursor:default;
+    }
+    #home p{
+        font-size:1.5rem ;
+        color:lightblue;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        cursor:default;
+ }
+ .pry{
+     font-size: 3rem; 
+     padding: 15px;
+    }
+    .btn{
+        margin: 15px;
+    padding: 5px 25px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: burlywood;
+    font-size: 1rem; 
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+/* List Section */
+#list{
+    display:grid;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr 1fr;
+
+    border: 2px solid red;
+    margin: 2px 0px;
+}
+#list .box{
+    display:flex;
+    flex-direction: column;
+    border: 2px solid red;
+    margin: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: lightblue; 
+
+}
+#list .box .cont{
+ justify-content: center;
+ align-content: center;
+}
